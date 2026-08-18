@@ -11,9 +11,14 @@ document.querySelectorAll(".reveal").forEach((el) => {
 });
 
 function startStory() {
+  const musica = document.getElementById("musica");
+
+  musica.play();
+
   document.querySelector(".message").scrollIntoView({
     behavior: "smooth"
   });
+
   burstHearts(18);
 }
 
